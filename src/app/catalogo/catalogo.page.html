@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="titulo">PRUEBA UNO</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-buttons>
+      <ion-back-button text="Salir" icon="chevron-back" default-href="" color="primary"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <br>
+  <div class="catalogo">Catálogo de productos</div>
+
+  <ion-item button *ngFor="let e of lista" color="dark" href="#" [routerLink]="['/detalle', e.title]" [queryParams]="[ e.price, e.description, e.id]" detail="true">
+    <ion-avatar slot="start">
+      <img [src]="[ e.images['0'] ]" alt="">
+    </ion-avatar>
+    <ion-label>
+      <h3>{{ e.title }}</h3>
+      <p> precio: $ {{ e.price}}</p>
+    </ion-label>
+  </ion-item>
+
+</ion-content>

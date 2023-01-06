@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="titulo">PRUEBA UNO</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-buttons>
+      <ion-back-button text="atras" icon="chevron-back" default-href="" color="primary"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content color="dark">
+  <div class="recupera">Recuperar tu contraseña</div><br>
+  <div align="center">Rellena los campos para solicitar tu nueva contraseña</div>
+
+
+  <ion-item color="dark">
+    <ion-label position="stacked">Correo</ion-label>
+    <ion-input placeholder="Ingresa tu correo registrado" type="email"></ion-input>
+  </ion-item>
+
+
+  <ion-item color="dark">
+    <ion-label position="stacked">Usuario</ion-label>
+    <ion-input placeholder="Ingresa tu usuario registrado" minlength="3" maxlength="8"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" type="reset" fill="clear" (click)="presentAlert()">Solicitar</ion-button>
+</ion-content>

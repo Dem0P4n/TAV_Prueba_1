@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="titulo"> {{ titulo }} </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-buttons>
+      <ion-back-button text="Salir" icon="chevron-back" default-href="" color="primary"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title> {{ titulo }}</ion-card-title>
+      <ion-card-subtitle> {{ precio }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content color="medium">
+      <br>
+
+      {{ descripcion }}
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>
